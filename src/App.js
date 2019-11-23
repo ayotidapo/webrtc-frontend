@@ -49,7 +49,7 @@ function App() {
   const initSocketIO = () => {
     connection = initRTCMultiConnection();
     //connection.socketURL = "http://llocalhostt:3000/"; https://cryptic-atoll-80533.herokuapp.com/
-    connection.socketURL = "https://ccryptic-atoll-80533.herokuapp.comm/";
+    connection.socketURL = "https://cryptic-atoll-80533.herokuapp.com/";
     // this RTCMultiConnection object is used to connect with existing users
     connection.getExternalIceServers = false;
     connection.onstream = function(event) {
