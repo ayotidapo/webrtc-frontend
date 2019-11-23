@@ -3,7 +3,7 @@ import "./App.css";
 
 let socket;
 // connect to backend server..
-socket = window.io.connect("http://localhost:3000/", {
+socket = window.io.connect("https://cryptic-atoll-80533.herokuapp.com/", {
   transports: ["websocket"]
 });
 let connection;
@@ -48,7 +48,7 @@ function App() {
 
   const initSocketIO = () => {
     connection = initRTCMultiConnection();
-    connection.socketURL = "http://llocalhostt:3000/";
+    connection.socketURL = "https://cryptic-atoll-80533.herokuapp.com/";
 
     // this RTCMultiConnection object is used to connect with existing users
     connection.getExternalIceServers = false;
@@ -180,7 +180,6 @@ function App() {
   );
 }
 export default App;
-
 // const rootElement = document.getElementById("root");
 // export default App;
 
